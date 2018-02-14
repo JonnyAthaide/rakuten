@@ -1,0 +1,26 @@
+// DEFAULT
+*{ margin: 0; padding: 0; }
+a { text-decoration: none; }
+ul { list-style: none; }
+
+// FONTS
+@font-face {
+  font-family: CenturyGothic;
+  src: url("../fonts/century_gothic.ttf");
+}
+@font-face {
+  font-family: RageItalic;
+  src: url("../fonts/rage_italic.ttf");
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// MAIN
+main {
+  box-sizing: border-box;  
+  width: 980px;
+  margin: auto;
+  // background-color: gray;
+}

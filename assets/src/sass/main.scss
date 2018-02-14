@@ -1,0 +1,671 @@
+section {
+  background-color: #efede8;
+}
+section#presentation {
+  background-color: #ffffff;
+  padding: 10px 0;
+
+  main {
+    display: flex;
+    > p {
+      position: absolute;
+
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+    }
+
+    > div {
+      font-family: CenturyGothic;
+      position: relative;
+
+      // LEFT
+      &.left-img {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        align-items: center;
+
+        > div#img-main {
+          text-align: center;
+          box-sizing: border-box;
+          width: 436px;
+        }
+        > div#gallery {
+          box-sizing: border-box;
+          // background-color: gold;
+          width: 180px;
+
+          ul {
+            width: 100%;
+
+            li {
+              border: #e3e3e3 thin solid;
+              padding: 15px;
+              max-height: 90px;
+              display: flex;
+              img {
+                width: 100%;
+                margin: auto;
+              }
+              &.active {
+                border: #999999 thin solid;
+              }
+            }
+          }
+        }
+      }
+
+      // RIGHT
+      &.right-desc {
+        padding-left: 20px;
+
+        > div {
+
+          // pagination
+          &#pagination{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+
+            >div{
+              display: flex;
+              align-items: center;
+              
+              &:last-child{
+                justify-content: space-around;
+                flex-direction: row-reverse;
+              }
+              
+              >div{
+                &.arrow{
+                  width: 34px;
+                  line-height: 34px;
+                  font-size: 24px;
+                  color: #ffffff;
+                  background-color: #cccccc;
+                  text-align: center;
+                }
+              }
+            }
+
+          }
+
+
+
+          // INFO-DESC
+          &#info-desc {
+            #title-desc {
+              p {
+                color: #7f7f7f;
+                font-family: Arial, sans-serif;
+                font-size: 10px;
+                margin: 4px 0;
+              }
+            }
+
+            #content-desc {
+              padding: 16px 0;
+            }
+            p {
+              color: #7f7f7f;
+
+              &.readmore {
+                text-align: right;
+                // background: rebeccapurple;
+              }
+
+              a {
+                color: #7f7f7f;
+                text-decoration: underline;
+              }
+            }
+          }
+
+          // info-color
+          &#info-color {
+            border-top: black thin dotted;
+            border-bottom: black thin dotted;
+            padding: 22px 0;
+
+            .color_choice {
+              width: 40% !important;
+              margin-top: 5px;
+
+              ul {
+                width: 90% !important;
+                margin: 0;
+              }
+
+              span {
+                font-size: 30px;
+                line-height: 24px;
+              }
+            }
+          }
+
+          // info-value
+          &#info-value {
+            ul {
+              position: relative;
+              padding: 15px;
+              li {
+                display: inline-block;
+                table {
+                  width: 100%;
+                  tr {
+                    &:nth-child(1) {
+                      td {
+                        text-decoration: line-through;
+                      }
+                    }
+                    &:nth-child(3) {
+                      td {
+                        span {
+                          font-size: 22px;
+                          font-weight: 500;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &:last-child {
+                  button {
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    background-color: #cd0020;
+                    padding: 10px 45px;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-family: Arial;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: none;
+
+                    span {
+                      font-size: 22px;
+                      line-height: 18px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          // info-wish
+          &#info-wish {
+            position: relative;
+            text-align: right;
+            width: 65px;
+            float: right;
+            clear: both;
+            margin-right: 10px;
+
+            a{
+              color: black;
+              font-size: 12px;
+            }
+            &::before {
+              content: url("../img/ico-wish.png");
+              float: left;
+              margin-right: 6px;
+              margin-top: 4px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+              
+
+  .before {
+    .arrow{
+      margin-right: 10px;
+    }
+  }
+
+  .after {
+    .arrow{
+      margin-left: 10px;
+    }
+  }
+
+// ====================================
+
+section {
+  background-color: #efede8;
+  > article {
+    padding: 18px 0;
+    h1 {
+      text-align: center;
+      font-family: CenturyGothic;
+      font-size: 30px;
+      color: #010101;
+      margin: 20px 0;
+    }
+
+    &#shared {
+      main {
+        > div#comments {
+          width: 550px;
+          margin: auto;
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    &#saw-to {
+      main {
+        > ul.list {
+          width: 880px;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          > li {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 16px 12px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &#buy-to {
+      main {
+        > ul.list {
+          width: 880px;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          > li {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 16px 12px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &#suggestion {
+      main {
+        > ul.list {
+          width: 880px;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          > li {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 16px 12px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &#instagram {
+      main {
+        position: relative;
+
+        > ul.list {
+          width: 880px;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          > li {
+            width: 205px;
+            height: 205px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            margin: 0 5px;
+            position: relative;
+
+            &:nth-child(1) {
+              background-image: url("../img/bg-insta01.jpg");
+            }
+            &:nth-child(2) {
+              background-image: url("../img/bg-insta02.jpg");
+            }
+            &:nth-child(3) {
+              background-image: url("../img/bg-insta03.jpg");
+            }
+            &:nth-child(4) {
+              background-image: url("../img/bg-insta04.jpg");
+            }
+          }
+        }
+      }
+    }
+
+    &#views {
+      main {
+        position: relative;
+
+        > ul.list {
+          width: 880px;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          > li {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 16px 12px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &#promotion {
+      main {
+        > ul.list {
+          width: 880px;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          > li {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 16px 12px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
+    &#buy-together {
+      main {
+        p {
+          color: #222222;
+          font-size: 14px;
+          font-family: CenturyGothic;
+          text-align: center;
+          margin: -15px 0 20px 0;
+        }
+        > ul.list {
+          width: 880px;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+
+          > li {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 16px 12px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product {
+  > li {
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+
+    &.title {
+      color: #7f7f7f;
+      font-size: 12px;
+    }
+
+    &.description {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    &.value {
+      font-size: 16px;
+    }
+
+    &:last-child {
+      margin-top: 54px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.see {
+  text-align: center;
+  border-top: #999999 thin solid;
+  padding: 12px 0;
+  font-family: CenturyGothic;
+  font-size: 12px;
+
+  a {
+    color: #000000;
+  }
+}
+
+.color_choice {
+  position: relative;
+
+  span {
+    position: absolute;
+    font-size: 21px;
+    line-height: 29px;
+    padding: 0 5px;
+    //   background-color: #ffed9d;
+
+    &.next {
+      right: 0;
+    }
+  }
+
+  > ul {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &.colors {
+      > li {
+        width: 21px;
+        height: 21px;
+
+        &:nth-child(1) {
+          background-color: #1a7ba8;
+        }
+        &:nth-child(2) {
+          background-color: #ffed9d;
+        }
+        &:nth-child(3) {
+          background-color: #211500;
+        }
+        &:nth-child(4) {
+          background-color: #2c2c2c;
+        }
+
+        &.color-select {
+          width: 29px;
+          height: 29px;
+        }
+      }
+    }
+  }
+}
+
+.buy-all {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+
+  table {
+    tr {
+      td {
+        button {
+          font-size: 14px;
+          font-weight: bold;
+          background-color: #cd0020;
+          color: #ffffff;
+          border: none;
+          padding: 10px 0;
+        }
+
+        &:nth-child(2) {
+          table {
+            padding-right: 10px;
+            tr {
+              &:first-child {
+                td {
+                  font-family: CenturyGothic;
+                  font-size: 14px;
+                  text-decoration: line-through;
+                  color: #222222;
+                }
+              }
+              &:last-child {
+                td {
+                  font-family: CenturyGothic;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #222222;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.buy-all-together {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+
+  table {
+    tr {
+      td {
+        button {
+          font-size: 14px;
+          font-weight: bold;
+          background-color: #cd0020;
+          color: #ffffff;
+          border: none;
+          padding: 10px 0;
+        }
+
+        &:nth-child(2) {
+          table {
+            padding-right: 10px;
+            tr {
+              &:first-child {
+                td {
+                  font-family: CenturyGothic;
+                  font-size: 14px;
+                  color: #222222;
+                }
+              }
+              &:last-child {
+                td {
+                  font-family: CenturyGothic;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #222222;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.equal {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.arrows {
+  > div {
+    position: absolute;
+    width: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #cccccc;
+    top: 50%;
+
+    &:last-child {
+      right: 0;
+    }
+  }
+}
+
+.insta {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 0 4px 5px;
+
+  &::after {
+    content: url("../img/ico-insta.jpg");
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  p {
+    color: #ffffff;
+  }
+}
